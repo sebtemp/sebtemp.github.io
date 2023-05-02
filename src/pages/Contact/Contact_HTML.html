@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="Contact_CSS.css"> <!--specific CSS to this page-->
+        <link rel="stylesheet" href="../Base_CSS.css"> <!--recurring CSS-->
+        <script src="Contact_JS.js"></script> <!--specific JS to this page-->
+        <script src="../Base_JS.js"></script> <!--recurring JS-->
+        <meta charset="UTF-8"> <!--encoding of the special characters-->
+        <meta http-equiv="X-UA-Compatible" content="width-device-width, initial-scale=1.0">
+        <meta name="viewport" content = "width=device-width">
+        <title>Contact</title>
+    </head>
+    <body>
+        <div id="clickForClear"></div>
+        <div id="main-div">
+            <aside>
+                <a href="#main-div"><img id="button-back-to-top" src="../../../resource/image/back-to-top.png"></a>
+            </aside>
+            <!--Header: -->
+            <header>
+                <div id="header-seb">
+                    <h1>Sébastien Lévesque</h1>
+                    <h2>Programmeur</h2>
+                </div>
+                <div id="header-pages">
+                    <div class="pages" id="topPages">
+                        <div>
+                            <a href="../Index/Index_HTML.html" target="_self">Page principale</a>
+                        </div>
+                        <div>
+                            <a href="../Contact/Contact_HTML.html" target="_self">Contact</a>
+                        </div>
+                        <div>
+                            <a href="../Autres Projets/AutresProjets_HTML.html" target="_self">Autres projets</a>
+                        </div>
+                    </div>
+                    <div class="pages">
+                        <div class="dropdown-parent" onmouseenter="ddHoverIn(this)" onmouseleave="ddHoverOut(this)">
+                            <div class="dropdown-button">Jeux</div>
+                            <div class="dropdown-items">
+                                <div class="hoverableLink" onclick="ddItemClick('Train Wreck')">
+                                    Train Wreck
+                                </div>
+                                <div class="hoverableLink" onclick="ddItemClick('TBDoom')">
+                                    TBDoom
+                                </div>
+                                <div class="hoverableLink" onclick="ddItemClick('Druidal Communion')">
+                                    Druidal Communion
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </header>
+            <!--Content of the page-->
+            <div id="content">
+                <div id="div-email">
+                    <p>
+                        Pour toute question, vous pouvez me joindre par <a id="id-email" href="mailto:sebastien.levesque.slev@gmail.com"><b><u>email</u></b></a>.
+                    </p>
+                </div>
+                <!--size up and down as an even listener for every [a] markups bellow and their [img] children-->
+                <div id="div-logos">
+                    <div class="logo">
+                        <a class="image" href="https://github.com/SebLevs" target="_blank">
+                            <img src="../../../resource/image/Brand Resources/GitHub-Mark-Light-64px.png"> GitHub
+                        </a> 
+                    </div>
+                    <div class="logo">
+                        <a class="image" href="https://www.linkedin.com/in/sebastienlevesqueslev/" target="_blank">
+                            <img src="../../../resource/image/Brand Resources/Linked-in_Logo_White_Big.png"> LinkedIn
+                        </a> 
+                    </div>
+                    <div class="logo">
+                        <a class="image"  href="https://ludwellstudio.itch.io/" target="_blank">
+                            <img src="../../../resource/image/Brand Resources/itch_32_white.png"> Itch.io
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a class="image" href="https://twitter.com/LudwellStudio" target="_blank">
+                            <img src="../../../resource/image/Brand Resources/twitter_32_white.png"> Twitter
+                        </a>
+                    </div>
+                </div>
+                <div id="div-form">
+                    <p>Prenez contact!</p>
+                    <form><!--action="mailto:sebastien.levesque.slev@gmail.com" method="post" enctype="text/plain">-->
+                        <div>
+                            <label for="fullName">Nom complet</label>
+                            <input id="fullName" type="text" required>
+                            <span id="errFullName">Veillez entrer un nom valide:<br/>Aucun chiffre et/ou charactère spécial n'est permis.</span>
+                        </div>
+                        <div>
+                            <label for="fullEmail">Email (cci)</label> <!--bcc-->
+                            <input id="fullEmail" type="email" required placeholder="foo@bar.com">
+                            <span id="errFullEmail">Veillez entrer un email valide:<br/> exemple: foo@bar.com</span>
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" required rows="5"></textarea>
+                            <span id="errMessage">Veuillez écrire un message.</span>
+                        </div>
+                        <div id="buttonDiv">
+                            <button id="buttonForm" onclick="onClickValidateForm(event)" type="submit">Envoyer le message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

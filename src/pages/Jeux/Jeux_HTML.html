@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="Jeux_CSS.css"> <!--specific to this page-->
+        <link rel="stylesheet" href="../Base_CSS.css"> <!--recurring code-->
+        <script src="Jeux_JS.js"></script> <!--specific JS to this page-->
+        <script src="../Base_JS.js"></script> <!--recurring JS-->
+        <meta charset="UTF-8"> <!--encoding of the special characters-->
+        <meta http-equiv="X-UA-Compatible" content="width-device-width, initial-scale=1.0">
+        <meta name="viewport" content = "width=device-width">
+        <title>Jeux</title>
+    </head>
+    <body>
+        <div id="main-div">
+            <aside>
+                <a href="#main-div"><img id="button-back-to-top" src="../../../resource/image/back-to-top.png"></a>
+            </aside>
+            <!--Popup image-->
+            <div id="bigImg">
+                <div id="container-bigImg">
+                    <div id="container-buttonClose">
+                        <div id="buttonClose" onclick="onCloseEnlarge(this)">&times</div>
+                    </div>
+                    <img id="imgPopup" src="">
+                </div>
+            </div>
+            <!--Header-->
+            <header>
+                <div id="header-seb">
+                    <h1>Sébastien Lévesque</h1>
+                    <h2>Programmeur</h2>
+                </div>
+                <div id="header-pages">
+                    <div class="pages" id="topPages">
+                        <div>
+                            <a class="hoverableLink" href="../Index/Index_HTML.html" target="_self">Page principale</a>
+                        </div>
+                        <div>
+                            <a class="hoverableLink" href="../Contact/Contact_HTML.html" target="_self">Contact</a>
+                        </div>
+                        <div>
+                            <a class="hoverableLink" href="../Autres Projets/AutresProjets_HTML.html" target="_self">Autres projets</a>
+                        </div>
+                    </div>
+                    <div class="pages">
+                        <div class="dropdown-parent" onmouseenter="ddHoverIn(this)" onmouseleave="ddHoverOut(this)">
+                            <div class="dropdown-button">Jeux</div>
+                            <div class="dropdown-items">
+                                <div class="hoverableLink" onclick="ddItemClick('Train Wreck')">
+                                    Train Wreck
+                                </div>
+                                <div class="hoverableLink" onclick="ddItemClick('TBDoom')">
+                                    TBDoom
+                                </div>
+                                <div class="hoverableLink" onclick="ddItemClick('Druidal Communion')">
+                                    Druidal Communion
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </header>
+            <!--Content of the page-->
+            <div id="content">
+                <div class="project" id="Train Wreck">
+                    <div class="top">
+                        <div class="left">
+                            <a href="https://ludwellstudio.itch.io/train-wreck" target="_blank">
+                                <div class="title">TrainWreck</div>
+                                <img src="../../../resource/image/Game/TrainWreck/TrainWreck_Main.png">
+                            </a>
+                        </div>
+                        <div class="right">
+                            Your train is the only thing between you and them.
+                            <br/><br/>
+                            They are relentless, they are infinite, and your only option to survive is to wreck them up with the sheer force of the locomotive you drive.
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img  class="scrollPrevious" src="../../../resource/image/back-to-top.png">
+                        <div class="scrollerImages">
+                            <img class="enlargeable" src="../../../resource/image/Game/TrainWreck/TrainWreck_GIF_00.gif">
+                            <img class="enlargeable" src="../../../resource/image/Game/TrainWreck/TrainWreck_GIF_01.gif">
+                        </div>
+                        <img class="scrollNext" src="../../../resource/image/back-to-top.png">
+                    </div>
+                </div>
+                <div class="project" id="TBDoom">
+                    <div class="top">
+                        <div class="left">
+                            <a href="https://ludwellstudio.itch.io/tbdoom" target="_blank">
+                                <div class="title">TBDoom</div>
+                                <img src="../../../resource/image/Game/TBDoom/TBDOOM.png">
+                            </a>
+                        </div>
+                        <div class="right">
+                            TBDoom is a Rogue-Like Doom-Like game made during a school project.
+                            <br/>
+                            It acts as a prototype, and future developpement will be done. 
+                            <br/>
+                            If you like the game, if you have suggestions or if you discover some bugs, let us know!
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img  class="scrollPrevious" src="../../../resource/image/back-to-top.png">
+                        <div class="scrollerImages">
+                            <img class="enlargeable" src="../../../resource/image/Game/TBDoom/TBD_Misille launcher.webp">
+                            <img class="enlargeable" src="../../../resource/image/Game/TBDoom/TBD_Tennis ball.webp">
+                        </div>
+                        <img class="scrollNext" src="../../../resource/image/back-to-top.png">
+                    </div>
+                </div>
+                <div class="project" id="Druidal Communion">
+                    <div class="top">
+                        <div class="left">
+                            <a href="https://ludwellstudio.itch.io/train-wreck" target="_blank">
+                                <div class="title">Druidal Communion</div>
+                                <img src="../../../resource/image/Game/DruidalCommunion/Druidal Communion.png">
+                            </a>
+                        </div>
+                        <div class="right">
+                            You are a druid.
+                            <br/><br/>
+                            Corruption is eating away at the flora around you.
+                            <br/><br/>
+                            Your link to nature has been ruptured!
+                            <br/><br/>
+                            You must restore the four altars present in the game world to restore your communion with nature and get rid of the corruption's grip on the flora.
+                            <br/><br/>
+                            Good luck!
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img class="scrollPrevious" src="../../../resource/image/back-to-top.png">
+                        <div class="scrollerImages">
+                            <img class="enlargeable" src="../../../resource/image/Game/DruidalCommunion/DC_Bush.gif">
+                            <img class="enlargeable" src="../../../resource/image/Game/DruidalCommunion/DC_Fight_Warlock.gif">
+                            <!--<img class="enlargeable" src="../../../resource/image/Game/DruidalCommunion/DC_Heal.gif">-->
+                        </div>
+                        <img class="scrollNext" src="../../../resource/image/back-to-top.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

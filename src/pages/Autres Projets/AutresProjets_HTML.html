@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="AutresProjets_CSS.css"> <!--specific to this page-->
+        <link rel="stylesheet" href="../Base_CSS.css"> <!--recurring code-->
+        <script src="AutresProjets_JS.js"></script> <!--specific JS to this page-->
+        <script src="../Base_JS.js"></script> <!--recurring JS-->
+        <meta charset="UTF-8"> <!--encoding of the special characters-->
+        <meta http-equiv="X-UA-Compatible" content="width-device-width, initial-scale=1.0">
+        <meta name="viewport" content = "width=device-width">
+        <title>Autres projets</title>
+    </head>
+    <body >
+        <div id="main-div">
+            <aside>
+                <a href="#main-div"><img id="button-back-to-top" src="../../../resource/image/back-to-top.png"></a>
+            </aside>
+            <!--Popup image-->
+            <div id="bigImg">
+                <div id="container-bigImg">
+                    <div id="container-buttonClose">
+                        <span id="buttonClose"  onclick="onCloseEnlarge(this)">&times</span>
+                    </div>
+                    <img id="imgPopup" src="">
+                </div>
+            </div>
+            <!--Header: -->
+            <header>
+                <div id="header-seb">
+                    <h1>Sébastien Lévesque</h1>
+                    <h2>Programmeur</h2>
+                </div>
+                <div id="header-pages">
+                    <div class="pages" id="topPages">
+                        <div>
+                            <a href="../Index/Index_HTML.html" target="_self">Page principale</a>
+                        </div>
+                        <div>
+                            <a href="../Contact/Contact_HTML.html" target="_self">Contact</a>
+                        </div>
+                        <div>
+                            <a href="../Autres Projets/AutresProjets_HTML.html" target="_self">Autres projets</a>
+                        </div>
+                    </div>
+                    <div class="pages">
+                        <div class="dropdown-parent" onmouseenter="ddHoverIn(this)" onmouseleave="ddHoverOut(this)">
+                            <div class="dropdown-button">Jeux</div>
+                            <div class="dropdown-items">
+                                <div class="hoverableLink" onclick="ddItemClick('Train Wreck')">
+                                    Train Wreck
+                                </div>
+                                <div class="hoverableLink" onclick="ddItemClick('TBDoom')">
+                                    TBDoom
+                                </div>
+                                <div class="hoverableLink" onclick="ddItemClick('Druidal Communion')">
+                                    Druidal Communion
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </header>
+            <!--Content of the page-->
+            <div id="content">
+                <div class="project" id="LaSalleCloningClub">
+                    <div class="top"> 
+                            <a class="hoverableLink"  href="https://itch.io/jam/lasalle-cloning-club-autumn2022" target="_blank">
+                                <div class="title">LaSalle Cloning Club</div>
+                            </a>
+                        <img class="enlargeable" src="../../../resource/image/SideProject/LaSalleCloningClub/Poster_LaSalle Cloning Club_1920.png">
+                    </div>
+                    <div class="mid">
+                        <p>
+                            Le LaSalle Cloning Club est un club fondé par moi-même pour le Collège LaSalle de Montréal.
+                            <br/><br/>
+                            Nous organisons un game jam par session d'une durée de 5 semaines que nous hébergeons sur <a class="hoverableLink" href="https://itch.io/" target="_blank"><b>itch.io</b></a> et dont le thème est un jeu classique à reproduire.
+                            <br/><br/>
+                            Le choix du thème varie d'un jeu d'arcade à un jeu de la NES (à un moindre degré pour permettre un scope réalistique).
+                            Nous offrons également aux élèves une plateforme communautaire par l'entremise de <a class="hoverableLink" href="https://discord.com/" target="_blank"><b>Discord</b></a> ou ils peuvent trouver des réponses à leurs questions.
+                            <br/><br/>
+                            Le LaSalle Cloning Club en trois point:
+                        </p>
+                        <ol>
+                            <li>
+                                Offrir une plateforme pour les élèves qui désirent développer leurs aptitudes en production de jeu vidéo.
+                            </li>
+                            <li>
+                                Offrir une opportunité par session de développer ses aptitudes en production de jeu vidéo par l'entremise 
+                                d'un game jam dont le thème permet une élaboration rapide d'un design intéressant.
+                            </li>
+                            <li>
+                                Permettre aux élèves de connecter et faciliter la création d'un réseau de contact pour bien démarrer leur avenir professionnel.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="bottom">
+                        <img class="scrollPrevious" src="../../../resource/image/back-to-top.png">
+                        <div class="scrollerImages">
+                            <img class="enlargeable" src="../../../resource/image/SideProject/LaSalleCloningClub/LaSalleCloningClub_Itch.png">
+                            <!--<img class="enlargeable" src="../../../resource/image/SideProject/LaSalleCloningClub/LaSalleCloningClub_Discord.png">-->
+                        </div>
+                        <img class="scrollNext" src="../../../resource/image/back-to-top.png"> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
